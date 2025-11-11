@@ -48,7 +48,12 @@ export const Navigation = () => {
   const navItems = [
     { id: "home", label: "home", href: "/" },
     { id: "about", label: "about", href: "/about" },
-    { id: "resume", label: "resume", href: "/resume" },
+    {
+      id: "resume",
+      label: "resume",
+      href: "https://drive.google.com/file/d/10FHua80D3ovBD3tTFx5_FLGMc3_ekmTp/view?usp=sharing",
+      external: true, // mark as external
+    },
   ];
 
   return (
@@ -67,17 +72,29 @@ export const Navigation = () => {
 
         {/* Navigation Links with Social Icons */}
         <div className="flex items-center space-x-8">
-          {navItems.map((item) => (
-            <a
-              key={item.id}
-              href={item.href}
-              className={`nav-link text-sm font-medium ${
-                activeSection === item.id ? "nav-link-active" : ""
-              }`}
-            >
-              {item.label}
-            </a>
-          ))}
+          {navItems.map((item) =>
+            item.external ? (
+              <a
+                key={item.id}
+                href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="nav-link text-sm font-medium"
+              >
+                {item.label}
+              </a>
+            ) : (
+              <a
+                key={item.id}
+                href={item.href}
+                className={`nav-link text-sm font-medium ${
+                  activeSection === item.id ? "nav-link-active" : ""
+                }`}
+              >
+                {item.label}
+              </a>
+            )
+          )}
 
           {/* Social Icons */}
           <div className="flex items-center space-x-4">

@@ -130,7 +130,7 @@ const ScrapbookBentoGrid = () => {
                       <div className="w-200 bg-gradient-to-br from-gray-200 to-gray-300 mb-4 flex items-center justify-center border border-gray-400/30">
                         <span className="text-gray-500 text-xs sm:text-sm">
                           <img
-                            src="src\assets\Us.jpg"
+                            src="/assets/Us.jpg"
                             alt="s"
                             className="w-200 h-85 object-cover"
                           />
