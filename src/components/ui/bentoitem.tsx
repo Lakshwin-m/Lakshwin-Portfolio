@@ -130,7 +130,7 @@ const ScrapbookBentoGrid = () => {
                       <div className="w-200 bg-gradient-to-br from-gray-200 to-gray-300 mb-4 flex items-center justify-center border border-gray-400/30">
                         <span className="text-gray-500 text-xs sm:text-sm">
                           <img
-                            src="/assets/Us.jpg"
+                            src="/assetsUs.jpg"
                             alt="s"
                             className="w-200 h-85 object-cover"
                           />
@@ -146,21 +146,12 @@ const ScrapbookBentoGrid = () => {
                   ) : (
                     <>
                       {/* Title */}
-                      <h3
-                        className="text-lg sm:text-xl font-normal text-gray-700 mb-3 sm:mb-4"
-                        style={{ fontFamily: "Courier New, monospace" }}
-                      >
+                      <h3 className="text-lg sm:text-xl font-normal text-gray-700 mb-3 sm:mb-4">
                         {card.title}
                       </h3>
 
                       {/* Body */}
-                      <p
-                        className="text-sm sm:text-base text-gray-700 leading-relaxed whitespace-pre-line"
-                        style={{
-                          fontFamily: "Comic Sans MS, cursive",
-                          lineHeight: "1.8",
-                        }}
-                      >
+                      <p className="text-sm sm:text-base text-gray-700 leading-relaxed whitespace-pre-line">
                         {card.body}
                       </p>
                     </>
