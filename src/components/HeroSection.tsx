@@ -30,16 +30,16 @@ export const HeroSection = () => {
         {/* Minimal grid background */}
 
         <div className="max-w-4xl text-black mx-auto text-center relative z-10">
-          <div className="mb-24">
+          <div className="mb-24 px-2 md:px-0">
             <h1
-              className={`text-2xl md:text-5xl lg:text-4xl font-light leading-loose md:leading-loose transition-opacity ${
+              className={`text-lg md:text-5xl lg:text-4xl font-light leading-relaxed md:leading-loose transition-opacity ${
                 isVisible ? "opacity-100" : "opacity-0"
               }`}
               style={{ transitionDuration: `${TEXT_FADE_DURATION}ms` }}
             >
               <span className="font-medium">Lakshwin</span> is a{" "}
-              <span className="font-medium italic relative inline-block">
-                <span className="relative z-10 px-1">
+              <span className="font-medium italic relative inline-block whitespace-normal md:whitespace-nowrap">
+                <span className="relative z-10 px-1 inline-block">
                   Computer Science undergraduate
                 </span>
                 <span
@@ -53,8 +53,8 @@ export const HeroSection = () => {
                 />
               </span>{" "}
               at his pre-final year. He is the{" "}
-              <span className="font-medium italic relative inline-block">
-                <span className="relative z-10 px-1">
+              <span className="font-medium italic relative inline-block whitespace-normal md:whitespace-nowrap">
+                <span className="relative z-10 px-1 inline-block">
                   Founder of ./localhost
                 </span>
                 <span
@@ -68,8 +68,8 @@ export const HeroSection = () => {
                 />
               </span>{" "}
               ✱ with experience in{" "}
-              <span className="font-medium italic relative inline-block">
-                <span className="relative z-10 px-1">
+              <span className="font-medium italic relative inline-block whitespace-normal md:whitespace-nowrap">
+                <span className="relative z-10 px-1 inline-block">
                   Machine learning and Deep learning
                 </span>
                 <span
